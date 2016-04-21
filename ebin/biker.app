@@ -1,0 +1,10 @@
+{application,biker,
+             [{description,[]},
+              {vsn,"1"},
+              {registered,[]},
+              {applications,[kernel,stdlib,riak_core]},
+              {mod,{biker_app,[]}},
+              {env,[]},
+              {modules,[biker,biker_app,biker_console,
+                        biker_node_event_handler,biker_ring_event_handler,
+                        biker_sup,biker_vnode]}]}.
