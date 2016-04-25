@@ -1,4 +1,4 @@
-REBAR = $(shell pwd)/rebar
+REBAR = rebar
 
 .PHONY: deps rel stagedevrel
 
@@ -20,7 +20,7 @@ test:
 	$(REBAR) skip_deps=true eunit
 
 rel: all
-	$(REBAR) generate
+	(cd rel && $(REBAR) generate)
 
 relclean:
 	rm -rf rel/biker
